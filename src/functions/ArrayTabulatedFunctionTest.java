@@ -111,3 +111,4 @@ class ArrayTabulatedFunctionTest {
         assertThrows(IllegalArgumentException.class, () -> new ArrayTabulatedFunction(x -> x, 0, 1, 0));
     }
 }
+"."

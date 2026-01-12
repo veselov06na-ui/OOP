@@ -3,7 +3,7 @@ package functions;
 import java.util.Arrays;
 
 /**
- * Array-backed implementation of AbstractTabulatedFunction.
+ * Array-backed implementation of AbstractTabulatedFunction..
  */
 public class ArrayTabulatedFunction extends AbstractTabulatedFunction {
     private final double[] xValues;
