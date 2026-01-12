@@ -15,7 +15,8 @@ class CompositeTabulatedFunctionTest {
 
         MathFunction h = f.andThen(g); // g(f(x))
 
-        assertEquals(6.0, h.apply(1.5), 1e-12); // f(1.5)=2.25? wait recalc -> see derive?? >> expected 6; rationale in code comment
+        double expected = g.apply(f.apply(1.5));
+        assertEquals(expected, h.apply(1.5), 1e-12);
     }
 
     @Test
